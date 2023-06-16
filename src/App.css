@@ -2,6 +2,9 @@
   height: 40vmin;
   pointer-events: none;
 }
+.App {
+  text-align: center;
+}
 
 .App h1 {
   text-align: center;
