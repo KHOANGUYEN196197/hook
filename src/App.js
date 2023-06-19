@@ -5,8 +5,11 @@ import HookUseEffect from "./useEffect";
 import ImpreativeHandle from "./useImpreativeHandle";
 import HookUseLayoutEffect from "./useLayoutEffect";
 import HookUseMemo from "./useMemo";
+import HookReducer from "./useReducer";
 import HookUserRef from "./useRef";
 import HookUseState from "./useState";
+import HookUseCallBack from "./useCallback";
+import ContextC from "./reactContext";
 
 function App() {
   return (
@@ -17,8 +20,11 @@ function App() {
       {/* <HookUseLayoutEffect /> */}
       {/* <HookUseMemo /> */}
       {/* <ReactMemo /> */}
+      {/* <HookUseCallBack /> */}
       {/* <ImpreativeHandle /> */}
-      <CustomHook />
+      {/* <CustomHook /> */}
+      <HookReducer />
+      {/* <ContextC /> */}
     </div>
   );
 }
