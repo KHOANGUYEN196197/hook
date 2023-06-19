@@ -10,22 +10,25 @@ import HookUserRef from "./useRef";
 import HookUseState from "./useState";
 import HookUseCallBack from "./useCallback";
 import ContextC from "./reactContext";
+import { LightProvider } from "./reactContext/context/LightContext";
 
 function App() {
   return (
-    <div className="App">
-      {/* <HookUseState /> */}
-      {/* <HookUseEffect /> */}
-      {/* <HookUserRef /> */}
-      {/* <HookUseLayoutEffect /> */}
-      {/* <HookUseMemo /> */}
-      {/* <ReactMemo /> */}
-      {/* <HookUseCallBack /> */}
-      {/* <ImpreativeHandle /> */}
-      {/* <CustomHook /> */}
-      <HookReducer />
-      {/* <ContextC /> */}
-    </div>
+    <LightProvider>
+      <div className="App">
+        {/* <HookUseState /> */}
+        {/* <HookUseEffect /> */}
+        {/* <HookUserRef /> */}
+        {/* <HookUseLayoutEffect /> */}
+        {/* <HookUseMemo /> */}
+        {/* <ReactMemo /> */}
+        {/* <HookUseCallBack /> */}
+        {/* <ImpreativeHandle /> */}
+        {/* <CustomHook /> */}
+        {/* <HookReducer /> */}
+        <ContextC /> {/* react.Context */}
+      </div>
+    </LightProvider>
   );
 }
 
